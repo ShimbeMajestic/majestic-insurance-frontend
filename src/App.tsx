@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material';
@@ -11,7 +11,7 @@ import { theme } from './theme';
 
 // Create Apollo Client
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
+  uri: process.env.REACT_APP_GRAPHQL_URI || 'http://localhost:4000/graphql',
   cache: new InMemoryCache(),
 });
 
