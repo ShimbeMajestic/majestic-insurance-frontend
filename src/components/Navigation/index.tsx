@@ -22,6 +22,9 @@ const Navigation = () => {
       >
         Get Started
       </Button>
+      <Button component={Link} to="/track-user" color="inherit">
+        Track User
+      </Button>
     </Box>
   );
 };

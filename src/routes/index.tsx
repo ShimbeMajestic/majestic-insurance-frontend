@@ -4,6 +4,7 @@ import Login from '../pages/Login';
 import Register from '../pages/Register';
 import Claims from '../pages/Claims';
 import Policies from '../pages/Policies';
+import TrackUser from '../pages/TrackUser';
 
 const AppRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AppRoutes = () => {
       <Route path="/register" element={<Register />} />
       <Route path="/claims" element={<Claims />} />
       <Route path="/policies" element={<Policies />} />
+      <Route path="/track-user" element={<TrackUser />} />
     </Routes>
   );
 };
